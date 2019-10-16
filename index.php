@@ -12,7 +12,7 @@
 	<title>CERCO IA</title>
 	<link rel="icon" type="image/png" href="https://ia.groupecerco.com/web/image/1789/LOGO_CERCO-IA.png" />
 	<link rel="stylesheet" type="text/css" href="css/game.css">
-	<script type="text/javascript" src="js/game.js"></script>
+	<script type="text/javascript" src="game.js"></script>
 	</head>
 
 	<body onload="initial()">
