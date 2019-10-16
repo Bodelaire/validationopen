@@ -17,10 +17,6 @@
 
 	<body onload="initial()">
 	
-	<div  class="info" >
-	<p > Ce jeu n'a pas d'instructions  </p>
-	<p > Allez ,vous pouvez y arriver , concentrez vous  </p>
-	</div>
 	
 	<div id="general">
 	<div class="container row " style="margin: 0 auto;">
