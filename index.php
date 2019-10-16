@@ -1,43 +1,4 @@
-<?php
- 
-if (isset($_COOKIE['fini'])  and !empty($_COOKIE['fini']))
-{
-
-	$id_var=$_COOKIE['id'];
-	setcookie('fini',"fini",time() - 8200);
-	unset($_COOKIE['fini']);
-	setcookie('id',"fini",time() - 8200);
-	unset($_COOKIE['id']);
-	header('Location: http://ia.groupecerco.com:3000/'.$id_var.'');
-	exit();
-}
-
-if (isset($_GET['id'])  and !empty($_GET['id'])) {
-	$id_var = $_GET['id'];	
-	setcookie('id',$id_var,time() + 7400);
-	$url = 'http://ia.groupecerco.com:5000/'.$id_var;
-	$data = file_get_contents($url);
-	$characters = json_decode($data); 
-
-	if ($characters->data->token == $id_var and $characters->data->score2 == 0 ) {
-				
-			}else{	
-				header('Location: http://ia.groupecerco.com:3000/'.$id_var.'');
-				exit();
-			}
-			
-		}
-		else
-		{
-			header('Location: erreur.html');
-			exit();
-		}
-
-	?>
-
-
-
-	<!DOCTYPE html>
+<!DOCTYPE html>
 	<html>
 
 	<head>
